@@ -2491,7 +2491,253 @@ body .gem-testimonials.style1 .gem-testimonial-wrapper:after{ color: #ffb320 !im
                                                 }
                                             </style>
                                         </div>
-                                        <div class="vc_row-full-width-before"></div>
+                                        <!-- <div class="vc_row-full-width-before"></div> -->
+                                        <div class="vc_row-full-width vc_clearfix"></div>
+                                        <div id="vc_row-65c11d700d9db" class="vc_row wpb_row vc_row-fluid vc_custom_1461064608896 thegem-custom-65c11d700d9d55263" style="padding-top: 15rem;">
+                                            <section class="successes">
+                                                <h6>Success Stories</h6>
+                                                <div class="carousel">
+                                                    <div class="carousel-images">
+                                                      <div class="carousel-image">
+                                                        <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/industries/retail/success-aifi-d.jpg" alt="Image 1">
+                                                        <div class="solution-column">
+                                                          <h6>Prism</h6>
+                                                          <p>Revolutionizing the retail landscape, our technologies integrates AI to monitor product movement, track inventory levels, and predict restocking needs in real-time. Say goodbye to empty shelves and missed sales opportunities!</p>
+                                                          <a href="#" class="learn-more-link">Learn More About Prism</a>
+                                                        </div>
+                                                      </div>
+                                                      <div class="carousel-image">
+                                                        <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/industries/retail/success-coolerscreens2-d.jpg" alt="Image 2">
+                                                        <div class="solution-column">
+                                                          <h6>Restocker</h6>
+                                                          <p>Retailers gain invaluable insights into customer preferences and inventory trends. Using AI algorithms, it predicts stock shortages, identifies popular items, and even suggests optimal product placements. Maximize sales and minimize out-of-stock instances effortlessly!</p>
+                                                          <a href="#" class="learn-more-link">Learn More About Restocker</a>
+                                                        </div>
+                                                      </div>
+                                                      <div class="carousel-image">
+                                                        <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/industries/retail/success-radiusai-d.jpg" alt="Image 3">
+                                                        <div class="solution-column">
+                                                          <h6>Auto Checkouts</h6>
+                                                          <p>Say goodbye to long checkout queues and manual inventory checks! ScanSmart leverages AI to automate the checkout process, accurately identify items, and update inventory levels in real-time. Transform your store into a seamless shopping experience with Auto Checkouts!</p>
+                                                          <a href="#" class="learn-more-link">Learn More About Auto Checkouts</a>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="carousel-controls">
+                                                      <button id="prev">&#8249;</button>
+                                                      
+                                                      <button id="next">&#8250;</button>
+                                                    </div>
+                                                  </div>
+                                                  <div class="slide-indicators"></div>                                             
+                                            </section>
+                                        </div>
+                                        <style>
+                                            .successes {
+                                                text-align: center;
+                                                padding: 50px;
+                                            }
+                                            .carousel {
+                                                position: relative;
+                                                width: 100%;
+                                                height: 500px; /* Increased height for better visibility */
+                                                overflow: hidden;
+                                                margin: auto; /* Center the carousel in its container */
+                                                /* transition: 0.6s ease-in; */
+                                            }
+                                            /* .carousel:hover {
+                                                transition: 0.6s ease-in;
+                                                transform: scale(1.1x);
+                                            } */
+
+                                            .carousel-images {
+                                                display: flex;
+                                                transition: transform 0.5s ease-in-out;
+                                            }
+
+                                            .carousel-image {
+                                                flex: 0 0 100%;
+                                                position: relative; /* Position relative to contain the overlay */
+                                            }
+
+                                            .carousel-image img {
+                                                width: 100%;
+                                                height: 100%;
+                                                object-fit: cover;
+                                            }
+
+                                            .carousel-image .solution-column {
+                                                position: absolute;
+                                                bottom: 20px; /* Position it at the bottom */
+                                                left: 20px; /* Some padding from the left */
+                                                background: rgba(0, 0, 0, 0); /* Semi-transparent background for readability */
+                                                color: white;
+                                                padding: 20px;
+                                                max-width: 70%; /* Ensure it doesn't take up too much space */
+                                                box-sizing: border-box;
+                                                border-radius: 10px;
+                                            }
+
+                                            .carousel-image .solution-column h6, .carousel-image .solution-column p, .carousel-image .solution-column a {
+                                                margin: 10px 0;
+                                            }
+                                            .carousel-image .solution-column h6{
+                                                color: #FFFFFF;
+                                            }
+
+                                            .carousel-image .solution-column a {
+                                                color: #007bff;
+                                                text-decoration: none;
+                                                margin-top: auto;
+                                                transition: 0.4s;
+                                            }
+
+                                            .carousel-image .solution-column a:hover {
+                                                color: #7ca8d7;
+                                                transition: 0.4s;
+                                            }
+
+                                            .carousel-controls {
+                                                position: absolute;
+                                                top: 50%;
+                                                transform: translateY(-50%);
+                                                width: 100%;
+                                                display: flex;
+                                                justify-content: space-between;
+                                                padding: 0 20px;
+                                                box-sizing: border-box;
+                                            }
+
+                                            .carousel-controls button {
+                                                font-size: 40px;
+                                                background-color: rgba(255, 255, 255, 0);
+                                                color: white;
+                                                border: none;
+                                                border-radius: 100%;
+                                                /* padding: 10px; */
+                                                cursor: pointer;
+                                                transition: transform 0.3s ease, background-color 0.3s ease;
+                                            }
+
+                                            .carousel-controls button:hover {
+                                                background-color: rgba(0, 0, 0, 0.185);
+                                                color: rgb(255, 246, 126);
+                                                transform: scale(2); /* Increase the size more on hover */
+                                            }
+                                            .carousel-controls button:active {
+                                                color: rgb(136, 131, 69);
+                                                transition: 0.1s ease;
+                                            }
+
+                                            .slide-indicators {
+                                                display: flex;
+                                                margin: 10px 0;
+                                                justify-content: center;
+                                            }
+
+                                            .slide-indicator {
+                                                width: 10px;
+                                                height: 10px;
+                                                background-color: rgba(250, 227, 135, 0.712);
+                                                border-radius: 50%;
+                                                margin: 0 5px;
+                                                cursor: pointer;
+                                                transition: background-color 0.3s ease;
+                                            }
+
+                                            .slide-indicator.active {
+                                                background-color: rgba(255, 215, 56, 0.816);
+                                            }
+
+                                            @media screen and (max-width: 768px) {
+                                                .carousel-image .solution-column {
+                                                    font-size: 14px;
+                                                }
+                                            }
+
+                                            @media screen and (max-width: 576px) {
+                                                .carousel-image .solution-column {
+                                                    font-size: 10px;
+                                                }
+                                            }
+                                        </style>
+                                        <script>
+                                            const carousel = document.querySelector('.carousel-images');
+                                            const prevBtn = document.querySelector('#prev');
+                                            const nextBtn = document.querySelector('#next');
+
+                                            let currentIndex = 0;
+                                            const imageCount = carousel.children.length;
+
+                                            function updateCarousel() {
+                                            const width = carousel.offsetWidth;
+                                            const height = carousel.querySelector('.carousel-image').offsetHeight;
+                                            carousel.style.transform = `translateX(-${currentIndex * width}px)`;
+                                            document.querySelector('.carousel').style.height = `${height}px`;
+                                            }
+                                            prevBtn.addEventListener('click', () => {
+                                            currentIndex = (currentIndex - 1 + imageCount) % imageCount;
+                                            updateCarousel();
+                                            updateSlideIndicators();
+                                            });
+
+                                            nextBtn.addEventListener('click', () => {
+                                            currentIndex = (currentIndex + 1) % imageCount;
+                                            updateCarousel();
+                                            updateSlideIndicators();
+                                            });
+
+                                            const slideIndicatorsContainer = document.querySelector('.slide-indicators');
+
+                                            function createSlideIndicators() {
+                                                for (let i = 0; i < imageCount; i++) {
+                                                    const indicator = document.createElement('span');
+                                                    indicator.classList.add('slide-indicator');
+                                                    indicator.dataset.index = i;
+                                                    indicator.addEventListener('click', () => {
+                                                        currentIndex = i;
+                                                        updateCarousel();
+                                                        updateSlideIndicators();
+                                                    });
+                                                    slideIndicatorsContainer.appendChild(indicator);
+                                                }
+                                                updateSlideIndicators();
+                                            }
+
+                                            function updateSlideIndicators() {
+                                                const indicators = slideIndicatorsContainer.querySelectorAll('.slide-indicator');
+                                                indicators.forEach((indicator, i) => {
+                                                    if (i === currentIndex) {
+                                                        indicator.classList.add('active');
+                                                    } else {
+                                                        indicator.classList.remove('active');
+                                                    }
+                                                });
+                                            }
+
+                                            createSlideIndicators();
+
+                                            window.addEventListener('resize', updateCarousel);
+                                            window.addEventListener('load', updateCarousel);
+                                            let slideInterval;
+
+                                            function startSlideInterval() {
+                                                slideInterval = setInterval(() => {
+                                                    currentIndex = (currentIndex + 1) % imageCount;
+                                                    updateCarousel();
+                                                    updateSlideIndicators();
+                                                }, 2000);
+                                            }
+
+                                            function stopSlideInterval() {
+                                                clearInterval(slideInterval);
+                                            }
+                                            carousel.addEventListener('mouseenter', stopSlideInterval);
+                                            carousel.addEventListener('mouseleave', startSlideInterval);
+
+                                            startSlideInterval();
+
+                                        </script>
                                         <!-- <div id="vc_row-65c11d700d60b" class="vc_row wpb_row vc_row-fluid thegem-custom-65c11d700d6073801">
                                             <div class="wpb_column vc_column_container vc_col-sm-12 thegem-custom-65c11d700d68f7102">
                                                 <div class="vc_column-inner thegem-custom-inner-65c11d700d690 ">
@@ -3136,7 +3382,7 @@ body .gem-testimonials.style1 .gem-testimonial-wrapper:after{ color: #ffb320 !im
                                 </div>
                             </div>
                         </div> -->
-                        <div class="vc_row-full-width vc_clearfix"></div>
+                        <!-- <div class="vc_row-full-width vc_clearfix"></div> -->
                         <!-- <div id="vc_row-65c11d701158c" class="vc_row wpb_row vc_row-fluid thegem-custom-65c11d70115889169">
                             <div class="wpb_column vc_column_container vc_col-sm-12 thegem-custom-65c11d70116159008">
                                 <div class="vc_column-inner thegem-custom-inner-65c11d7011616 ">
